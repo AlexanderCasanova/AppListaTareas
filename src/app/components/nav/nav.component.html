@@ -1,0 +1,17 @@
+<nav class="navbar">
+  <div class="navbar__logo"><img src="../../assets/logo4.JPG" alt="Logo"></div>
+
+  <div class="navbar__div">
+    <ul class="navbar__items">
+      <ng-container *ngFor="let navItem of navItems">
+
+
+        <li class="navbar__items-link">
+          <a class="navbar__items-link-a" [routerLink]="navItem.route" routerLinkActive="active-link">{{ navItem.label }}</a>
+        </li>
+        
+      </ng-container>
+    </ul>
+  </div>
+
+</nav>
