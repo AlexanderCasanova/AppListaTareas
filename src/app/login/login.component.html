@@ -1,0 +1,17 @@
+<div class="container">
+  <div>
+    <h1>LOGIN</h1>
+    <form (submit)="signIn()">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" [(ngModel)]="user.email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" class="form-control" [(ngModel)]="user.password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <a routerLink="/signup">Signup</a>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        min-width: 40vw;
+        max-width: 50vw;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+            margin: auto;
+            font-size: 2em;
+        }
+
+        form {
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            div {
+                height: 30%;
+
+                input {
+                    height: 50%;
+                    border: none;
+                    border-bottom: 2px solid green;
+                }
+            }
+
+            button {
+                height: 15%;
+            }
+        }
+
+    }
+}
